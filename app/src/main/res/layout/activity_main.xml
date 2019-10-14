@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/download"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET THE LATEST NEWS HERE AND KNOW ABOUT THE THINGS AROUND YOU!!!"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:background="@android:color/white"
+        android:textColor="#fe2072"
+        android:layout_margin="20dp"
+
+        />
+     <Button
+         android:id="@+id/get_updated"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:text="GET UPDATED"
+         android:layout_margin="30dp"
+         android:layout_gravity="bottom"
+         android:background="#fe2072"
+         android:textColor="@android:color/white"
+         android:textSize="25sp"
+         />
+
+</LinearLayout>
+
