@@ -31,7 +31,7 @@ public class Main2Activity extends AppCompatActivity {
 
          textView=findViewById(R.id.text_view_result);
          mQueue= Volley.newRequestQueue(this);
-        String url="https://newsapi.org/v2/everything?q=bitcoin&from=2019-09-14&sortBy=publishedAt&apiKey=API_KEY";
+        String url="https://newsapi.org/v2/everything?q=bitcoin&from=2019-09-15&sortBy=publishedAt&apiKey=ee5ee296eb004187be7e91ca3d588bd2";
         JsonObjectRequest request=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -44,7 +44,7 @@ public class Main2Activity extends AppCompatActivity {
                         String description=myNews.getString("description");
                         String content=myNews.getString("content");
 
-                        System.out.print(title+"\n\n"+description+"\n\n"+content);
+                        textView.append(title+"\n\n"+description+"\n\n"+content);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
